@@ -16,7 +16,7 @@ public enum SheetTranslationState {
 
 public class UBottomSheetCoordinator: NSObject {
     public weak var parent: UIViewController!
-    private var container: UIView?
+    public var container: UIView?
     public weak var dataSource: UBottomSheetCoordinatorDataSource! {
         didSet {
             minSheetPosition = dataSource.sheetPositions(availableHeight).min()
