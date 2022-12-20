@@ -245,7 +245,7 @@ public class UBottomSheetCoordinator: NSObject {
     /**
      If you are using UIVisualEffectView or transparent sheet background. You need to cut shadow part which intersects the sheet frame with this.
      */
-    private func clearShadowBackground() {
+    public func clearShadowBackground() {
         let p = CGMutablePath()
         p.addRect(parent.view.bounds.insetBy(dx: 0, dy: -availableHeight))
         p.addPath(UIBezierPath(roundedRect: getInitialFrame(), cornerRadius: cornerRadius).cgPath)
