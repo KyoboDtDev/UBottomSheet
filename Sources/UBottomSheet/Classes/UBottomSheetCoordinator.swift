@@ -221,6 +221,7 @@ public class UBottomSheetCoordinator: NSObject {
      */
     public func removeDropShadow() {
         dropShadowView?.removeFromSuperview()
+        dropShadowView = nil
     }
     
     /**
